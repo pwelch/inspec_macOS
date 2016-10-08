@@ -1,0 +1,10 @@
+name: profile
+title: Basic macOS InSpec
+maintainer: Paul Welch
+copyright: Paul Welch
+copyright_email: git@pwelch.net
+license: MIT
+summary: Basic security checks for macOS
+version: 1.0.0
+supports:
+  - os-family: darwin

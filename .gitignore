@@ -1,0 +1,15 @@
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+.vagrant
+.kitchen/
+.kitchen.local.yml
