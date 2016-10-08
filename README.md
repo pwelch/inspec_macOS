@@ -1,4 +1,5 @@
 # Inspec macOS
+[![Build Status](https://travis-ci.org/pwelch/inspec_macOS.svg?branch=master)](https://travis-ci.org/pwelch/inspec_macOS)
 
 Security checks for macOS using the [InSpec](http://inspec.io/) Auditing and testing framework.
 
