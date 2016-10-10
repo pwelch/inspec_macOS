@@ -9,14 +9,10 @@ control 'cis-benchmark-osx-1.1' do
   desc 'It is important that updates be applied in a timely manner to prevent exploits.'
   ref 'https://benchmarks.cisecurity.org/tools2/osx/CIS_Apple_OSX_10.10_Benchmark_v1.0.0.pdf'
 
-  # 'Currently failing on OSX 10.10'
-  skip = true
-  only_if do
-    skip == false
-  end
-
+  # The command's output is actually stderr
+  # /usr/sbin/softwareupdate -l 1> /dev/null
   describe command('/usr/sbin/softwareupdate -l') do
-    its('stdout') { should match /(No new software available.)/ }
+    its('stderr') { should match /(No new software available.)/ }
   end
 end
 
